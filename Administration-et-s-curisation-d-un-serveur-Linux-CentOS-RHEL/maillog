@@ -1,0 +1,62 @@
+Jul  7 15:37:36 localhost postfix/postfix-script[41855]: starting the Postfix mail system
+Jul  7 15:37:36 localhost postfix/master[41857]: daemon started -- version 3.5.25, configuration /etc/postfix
+Jul  7 15:37:38 localhost cyrus/ctl_cyrusdb[41901]: skiplist: clean shutdown file missing, updating recovery stamp
+Jul  7 15:37:38 localhost cyrus/ctl_cyrusdb[41901]: recovering cyrus databases
+Jul  7 15:37:38 localhost cyrus/ctl_cyrusdb[41901]: adding reverse uniqueid support
+Jul  7 15:37:38 localhost cyrus/ctl_cyrusdb[41901]: done recovering cyrus databases
+Jul  7 15:37:38 localhost cyrus/master[41900]: unable to bind to http/ipv4 socket: Address already in use
+Jul  7 15:37:38 localhost cyrus/master[41900]: unable to bind to http/ipv6 socket: Address already in use
+Jul  7 15:37:38 localhost cyrus/master[41900]: unable to create http listener socket: Address already in use
+Jul  7 15:37:38 localhost cyrus/ctl_cyrusdb[41902]: checkpointing cyrus databases
+Jul  7 15:37:38 localhost cyrus/ctl_cyrusdb[41902]: done checkpointing cyrus databases
+Jul  7 15:48:37 localhost postfix/sendmail[42191]: warning: /etc/postfix/main.cf, line 741: overriding earlier entry: inet_interfaces=localhost
+Jul  7 15:48:37 localhost postfix/postdrop[42192]: warning: /etc/postfix/main.cf, line 741: overriding earlier entry: inet_interfaces=localhost
+Jul  7 15:48:37 localhost postfix/cleanup[42193]: warning: /etc/postfix/main.cf, line 741: overriding earlier entry: inet_interfaces=localhost
+Jul  7 15:48:37 localhost postfix/pickup[41859]: D14622353C39: uid=0 from=<root>
+Jul  7 15:48:37 localhost postfix/trivial-rewrite[42194]: warning: /etc/postfix/main.cf, line 741: overriding earlier entry: inet_interfaces=localhost
+Jul  7 15:48:37 localhost postfix/cleanup[42193]: D14622353C39: message-id=<20250707194837.D14622353C39@mail.domainenoah.local>
+Jul  7 15:48:37 localhost postfix/qmgr[41860]: D14622353C39: from=<root@domainenoah.local>, size=341, nrcpt=1 (queue active)
+Jul  7 15:48:37 localhost postfix/local[42195]: warning: /etc/postfix/main.cf, line 741: overriding earlier entry: inet_interfaces=localhost
+Jul  7 15:48:37 localhost postfix/bounce[42196]: warning: /etc/postfix/main.cf, line 741: overriding earlier entry: inet_interfaces=localhost
+Jul  7 15:48:37 localhost postfix/local[42195]: D14622353C39: to=<NOLAD@domainenoah.local>, relay=local, delay=0.07, delays=0.04/0.02/0/0.01, dsn=5.1.1, status=bounced (unknown user: "nolad")
+Jul  7 15:48:37 localhost postfix/cleanup[42193]: DC00424475C6: message-id=<20250707194837.DC00424475C6@mail.domainenoah.local>
+Jul  7 15:48:37 localhost postfix/qmgr[41860]: DC00424475C6: from=<>, size=2299, nrcpt=1 (queue active)
+Jul  7 15:48:37 localhost postfix/local[42195]: warning: maildir access problem for UID/GID=0/0: create maildir file /root/Maildir/tmp/1751917717.P42195.localhost.localdomain: Permission denied
+Jul  7 15:48:37 localhost postfix/local[42195]: warning: perhaps you need to create the maildirs in advance
+Jul  7 15:48:37 localhost postfix/bounce[42196]: D14622353C39: sender non-delivery notification: DC00424475C6
+Jul  7 15:48:37 localhost postfix/qmgr[41860]: D14622353C39: removed
+Jul  7 15:48:37 localhost postfix/local[42195]: DC00424475C6: to=<root@domainenoah.local>, relay=local, delay=0.01, delays=0/0/0/0, dsn=5.2.0, status=bounced (maildir delivery failed: create maildir file /root/Maildir/tmp/1751917717.P42195.localhost.localdomain: Permission denied)
+Jul  7 15:48:37 localhost postfix/qmgr[41860]: DC00424475C6: removed
+Jul  7 15:48:37 localhost postfix/bounce[42197]: warning: /etc/postfix/main.cf, line 741: overriding earlier entry: inet_interfaces=localhost
+Jul  7 15:48:46 localhost postfix/sendmail[42388]: warning: /etc/postfix/main.cf, line 741: overriding earlier entry: inet_interfaces=localhost
+Jul  7 15:48:46 localhost postfix/postdrop[42389]: warning: /etc/postfix/main.cf, line 741: overriding earlier entry: inet_interfaces=localhost
+Jul  7 15:48:46 localhost postfix/pickup[41859]: 72D6C2363809: uid=0 from=<root>
+Jul  7 15:48:46 localhost postfix/cleanup[42193]: 72D6C2363809: message-id=<20250707194846.72D6C2363809@mail.domainenoah.local>
+Jul  7 15:48:46 localhost postfix/qmgr[41860]: 72D6C2363809: from=<root@domainenoah.local>, size=359, nrcpt=1 (queue active)
+Jul  7 15:48:46 localhost postfix/local[42195]: 72D6C2363809: to=<NOLAD@domainenoah.local>, relay=local, delay=0.03, delays=0.01/0/0/0.01, dsn=5.1.1, status=bounced (unknown user: "nolad")
+Jul  7 15:48:46 localhost postfix/cleanup[42193]: 765C52353C07: message-id=<20250707194846.765C52353C07@mail.domainenoah.local>
+Jul  7 15:48:46 localhost postfix/qmgr[41860]: 765C52353C07: from=<>, size=2317, nrcpt=1 (queue active)
+Jul  7 15:48:46 localhost postfix/local[42195]: warning: maildir access problem for UID/GID=0/0: create maildir file /root/Maildir/tmp/1751917726.P42195.localhost.localdomain: Permission denied
+Jul  7 15:48:46 localhost postfix/local[42195]: warning: perhaps you need to create the maildirs in advance
+Jul  7 15:48:46 localhost postfix/local[42195]: 765C52353C07: to=<root@domainenoah.local>, relay=local, delay=0.01, delays=0.01/0/0/0.01, dsn=5.2.0, status=bounced (maildir delivery failed: create maildir file /root/Maildir/tmp/1751917726.P42195.localhost.localdomain: Permission denied)
+Jul  7 15:48:46 localhost postfix/qmgr[41860]: 765C52353C07: removed
+Jul  7 15:48:46 localhost postfix/bounce[42197]: 72D6C2363809: sender non-delivery notification: 765C52353C07
+Jul  7 15:48:46 localhost postfix/qmgr[41860]: 72D6C2363809: removed
+Jul  7 15:52:35 localhost postfix/postfix-script[42443]: stopping the Postfix mail system
+Jul  7 15:52:35 localhost postfix/master[41857]: terminating on signal 15
+Jul  7 15:52:35 localhost postfix/postfix-script[42447]: waiting for the Postfix mail system to terminate
+Jul  7 15:52:36 localhost postfix/postfix-script[42522]: starting the Postfix mail system
+Jul  7 15:52:36 localhost postfix/master[42524]: daemon started -- version 3.5.25, configuration /etc/postfix
+Jul  7 15:52:51 localhost postfix/pickup[42525]: AC179236380E: uid=0 from=<root>
+Jul  7 15:52:51 localhost postfix/cleanup[42534]: AC179236380E: message-id=<20250707195251.AC179236380E@mail.domainenoah.local>
+Jul  7 15:52:51 localhost postfix/qmgr[42526]: AC179236380E: from=<root@domainenoah.local>, size=360, nrcpt=1 (queue active)
+Jul  7 15:52:51 localhost postfix/local[42536]: AC179236380E: to=<NOLAD@domainenoah.local>, relay=local, delay=0.03, delays=0.02/0.01/0/0.01, dsn=5.1.1, status=bounced (unknown user: "nolad")
+Jul  7 15:52:51 localhost postfix/cleanup[42534]: B37542363833: message-id=<20250707195251.B37542363833@mail.domainenoah.local>
+Jul  7 15:52:51 localhost postfix/qmgr[42526]: B37542363833: from=<>, size=2318, nrcpt=1 (queue active)
+Jul  7 15:52:51 localhost postfix/local[42536]: warning: maildir access problem for UID/GID=0/0: create maildir file /root/Maildir/tmp/1751917971.P42536.localhost.localdomain: Permission denied
+Jul  7 15:52:51 localhost postfix/local[42536]: warning: perhaps you need to create the maildirs in advance
+Jul  7 15:52:51 localhost postfix/bounce[42537]: AC179236380E: sender non-delivery notification: B37542363833
+Jul  7 15:52:51 localhost postfix/qmgr[42526]: AC179236380E: removed
+Jul  7 15:52:51 localhost postfix/local[42536]: B37542363833: to=<root@domainenoah.local>, relay=local, delay=0.01, delays=0/0/0/0.01, dsn=5.2.0, status=bounced (maildir delivery failed: create maildir file /root/Maildir/tmp/1751917971.P42536.localhost.localdomain: Permission denied)
+Jul  7 15:52:51 localhost postfix/qmgr[42526]: B37542363833: removed
+Jul  7 16:07:38 localhost cyrus/master[41900]: process type:EVENT name:checkpoint path:/usr/sbin/ctl_cyrusdb age:0.112s pid:42779 exited, status 78

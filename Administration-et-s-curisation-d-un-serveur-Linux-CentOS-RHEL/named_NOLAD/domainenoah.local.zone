@@ -1,0 +1,22 @@
+$TTL 1D
+@   IN  SOA     ns1.domainenoah.local. admin.domainenoah.local. (
+                    2025070701 ; Serial
+                    1D         ; Refresh
+                    1H         ; Retry
+                    1W         ; Expire
+                    3H )       ; Minimum TTL
+
+    IN  NS      ns1.domainenoah.local.
+    IN  NS      ns2.domainenoah.local.
+
+ns1 IN  A       127.0.0.1
+ns2 IN  A       127.0.0.1
+
+@   IN  A       127.0.0.1
+www IN  A       127.0.0.1
+ftp IN  A       127.0.0.1
+reception IN A  127.0.0.1
+envoi IN A      127.0.0.1
+
+@ IN MX 10 reception.domainenoah.local.
+@ IN TXT "v=spf1 mx a envoi.domainenoah.local -all"

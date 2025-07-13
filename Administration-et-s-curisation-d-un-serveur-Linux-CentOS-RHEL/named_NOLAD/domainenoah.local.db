@@ -1,0 +1,17 @@
+$TTL 86400
+@   IN  SOA ns1.domainenoah.local. admin.domainenoah.local. (
+        2025070701  ; Serial
+        3600        ; Refresh
+        1800        ; Retry
+        604800      ; Expire
+        86400 )     ; Minimum TTL
+
+    IN  NS  ns1.domainenoah.local.
+    IN  NS  ns2.domainenoah.local.
+
+ns1 IN  A   192.168.56.10
+ns2 IN  A   192.168.56.11
+www IN  A   192.168.56.10
+ftp IN  A   192.168.56.10
+reception IN A 192.168.56.10
+envoi IN A 192.168.56.10
